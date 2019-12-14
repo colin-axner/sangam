@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/colinaxner/sangam/client/cli/cmd"
+	"github.com/colin-axner/sangam/client/cli/cmd"
 	"os"
 )
 

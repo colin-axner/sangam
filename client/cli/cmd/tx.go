@@ -1,5 +1,7 @@
 package cli
 
+/*
+TODO: relies on core functionality to be implemented to compile
 import (
 	"bufio"
 
@@ -48,4 +50,4 @@ func RegisterTxCmd(cdc *codec.Codec) *cobra.Command {
 	cmd = client.PostCommands(cmd)[0]
 
 	return cmd
-}
+}*/

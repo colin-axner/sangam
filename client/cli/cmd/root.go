@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	ipfsCmds "github.com/ipfs/go-ipfs/core/commands"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"os"
@@ -19,6 +20,10 @@ func RootCmd() *cobra.Command {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	rootCmd.AddCommand(
+		ipfsCmds.KeyCmd(),
+	)
 
 	//	rootCmd.AddCommand(
 	//	tx.RootCmd(),
